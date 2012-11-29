@@ -7,10 +7,11 @@
 
   <!-- Servers -->
   <servers>
+    <!-- fileDeletionDelayAfterSync required to stop the original files from being deleted by FileConveyor -->
     <server name="rackspace cloudfiles" transporter="cloudfiles" fileDeletionDelayAfterSync="60000000000000000">
-      <username>daemontest</username>
-      <api_key>daemontest</api_key>
-      <container>http://localhost/daemontest/</container>
+      <username>username</username>
+      <api_key>rackspace_api_key</api_key>
+      <container>container_name</container>
     </server>
   </servers>
 
